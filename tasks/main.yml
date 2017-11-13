@@ -1,2 +1,5 @@
+- name: Update repository
+  shell: "apt-get update"
+
 - name: Install Redis
-  apt: pkg=redis-server state=installed update_cache=true
+  apt: pkg=redis-server state=installed
